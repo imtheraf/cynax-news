@@ -20,7 +20,7 @@ const updateAllNews = async () => {
 
 const initCronJobs = () => {
   // Run every 12 hours
-  cron.schedule('0 */12 * * *', updateAllNews);
+  cron.schedule('0 */4 * * *', updateAllNews);
   
   // Run immediately on startup
   updateAllNews();
